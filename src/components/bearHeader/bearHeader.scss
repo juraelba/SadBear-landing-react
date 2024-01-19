@@ -1,0 +1,110 @@
+.bear-header {
+    padding: 75px 40px;
+    background: transparent;
+
+    .header-container {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+
+        .logo-image {
+            width: 186px;
+            height: 58px;
+            mix-blend-mode: lighten;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .category-wrapper {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .category {
+                font-size: 16px;
+                color: #fff;
+                padding: 0 24px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
+}
+
+.side-nav {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .bear-header {
+        padding: 25px 40px;
+
+        .header-container {
+            .category-wrapper {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+
+    .side-nav {
+        display: block;
+        height: 100%;
+        width: 460px !important;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: #292929;
+        overflow-x: hidden;
+        padding: 150px 100px;
+        transition: 0.5s;
+        opacity: 0.95;
+
+        .mobile-logo {
+            position: absolute;
+            top: 10px;
+            left: 35px;
+        }
+
+        .close {
+            position: absolute;
+            top: 24px;
+            right: 55px;
+            color: #fff;
+            width: 30px;
+        }
+
+        .side-category {
+            text-align: left;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 40px 0 10px 0;
+            line-height: 40px;
+            border-bottom: 1px solid #D5BF8C;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .bear-header {
+        .side-nav {
+            width: 100% !important;
+        }
+    }
+}

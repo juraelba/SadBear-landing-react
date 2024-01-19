@@ -1,0 +1,861 @@
+.sad-bear {
+    background-image: url("../../image/bear-background.png");
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+    .bottom-background {
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        background-image: url("../../image/bear6.png");
+        background-position: bottom 0 right -100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 1300px;
+        z-index: 0;
+        mix-blend-mode: overlay;
+        pointer-events: none;
+    }
+
+    .main-section {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        position: relative;
+
+        .main-title-wrapper {
+            display: flex;
+            margin-bottom: 65px;
+
+            .main-title {
+                margin-left: 180px;
+                width: 620px;
+                text-align: left;
+
+                .title {
+                    font-family: "Hiruko";
+                    font-size: 90px;
+                    color: #fff;
+                    margin-bottom: 0;
+                }
+
+                .description {
+                    font-family: "Hiruko";
+                    font-size: 46px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                }
+
+                .content {
+                    font-size: 36px;
+                    color: #fff;
+                    text-align: justify;
+                    letter-spacing: -1.3px;
+                    line-height: 40px;
+
+                    b {
+                        font-family: "Hiruko";
+                    }
+                }
+
+                .connect-button {
+                    font-family: "Hiruko";
+                    font-size: 34px;
+                    color: #00ffff;
+                    padding: 10px;
+                    border-radius: 2px;
+                    background: radial-gradient(92.05% 92.05% at 50% 64.77%,
+                            rgba(16, 134, 141, 0.5) 0%,
+                            rgba(196, 196, 196, 0) 100%);
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    border-image: linear-gradient(to bottom, #fff, #00ffff) 1 round;
+                    margin-top: 10px;
+                    margin-bottom: 80px;
+                }
+
+                .counter-placeholder {
+                    font-family: "Hiruko";
+                    font-size: 72px;
+                    color: #00ffff;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                }
+            }
+
+            .bear-image-section {
+                width: 690px;
+                height: 690px;
+                margin: 130px auto;
+                background-image: url("../../image/bear-gif.gif");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+            }
+        }
+
+        .second-cloud-wrapper {
+            .second-cloud {
+                z-index: 0;
+                top: 160px;
+            }
+
+            .road-map-wrapper {
+                display: flex;
+
+                .road-left-arrow {
+                    width: 40%;
+                    display: flex;
+                    justify-content: center;
+                    height: 218px;
+                }
+
+                .road-map-content-wrapper {
+                    width: 60%;
+                    padding: 0 100px;
+                    text-align: center;
+                    position: relative;
+                    z-index: 9;
+
+                    .road-map-title {
+                        font-family: "Hiruko";
+                        font-size: 46px;
+                        color: #fff;
+                    }
+
+                    .road-map-content {
+                        font-size: 36px;
+                        color: #fff;
+                        text-align: justify;
+                        margin-bottom: 70px;
+                        line-height: 40px;
+                        letter-spacing: 0.2px;
+                    }
+
+                    .roadmap-arrow {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .connect-section {
+        height: 667px;
+        border-radius: 0 49px 49px 0;
+        background: rgba(196, 196, 196, 0.5);
+        margin-right: 60px;
+        position: relative;
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+
+        .midline {
+            mix-blend-mode: normal;
+            border: 10px solid rgba(255, 255, 255, 0.75);
+            border-radius: 50px;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            position: absolute;
+            top: 82px;
+            right: 44px;
+            height: 536px;
+            width: 100%;
+            pointer-events: none;
+        }
+
+        .short-arrow {
+            position: absolute;
+            bottom: 0;
+            right: 355px;
+            transform: translateY(76%);
+        }
+
+        .connect-bear {
+            width: 661px;
+            height: 661px;
+            object-fit: contain;
+            z-index: 1;
+        }
+
+        .connect-link {
+            text-align: center;
+            width: 100%;
+
+            .connect-link-title {
+                font-family: 'Hiruko';
+                font-size: 60px;
+                color: #fff;
+                margin-bottom: 100px;
+            }
+
+            .connect-group {
+                margin: auto;
+
+                .link-icon {
+                    width: 250px;
+                    padding: 0 30px;
+                }
+            }
+
+        }
+    }
+
+    .rarities-section {
+        height: 500px;
+        border-radius: 49px 0 0 49px;
+        background: transparent;
+        margin-left: 177px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+        display: flex;
+        margin-bottom: 50px;
+
+        .midline {
+            mix-blend-mode: normal;
+            border: 10px solid rgba(255, 255, 255, 0.75);
+            border-radius: 50px;
+            position: absolute;
+            top: 176px;
+            left: 83px;
+            height: 250px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .coming-soon {
+                font-size: 72px;
+                line-height: 40px;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        .rarities-title {
+            font-family: "Hiruko";
+            font-size: 60px;
+            color: #fff;
+            position: absolute;
+            top: 65px;
+            right: 325px;
+            margin-bottom: 0;
+        }
+
+        .rarities-arrow {
+            position: absolute;
+            bottom: 0;
+            right: 300px;
+            transform: translateY(75%);
+            height: 320px;
+        }
+    }
+
+    .team-section-wrapper {
+        text-align: center;
+
+        .title {
+            font-family: "Hiruko";
+            font-size: 64px;
+            line-height: 62px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 90px;
+        }
+
+        .team-wrapper {
+            position: relative;
+            padding: 100px 80px 10px 50px;
+            margin: 0 100px;
+
+            &:before {
+                position: absolute;
+                border-radius: 49px;
+                background: rgba(196, 196, 196, 0.75);
+                mix-blend-mode: overlay;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                content: "";
+                width: 100%;
+                height: 100%;
+            }
+
+            .team-member {
+                display: flex;
+                margin-bottom: 75px;
+
+                .member-avatar {
+                    margin-right: 94px;
+                    object-fit: contain;
+                    width: 100%;
+                }
+
+                .member-wrapper {
+                    text-align: left;
+
+                    .name {
+                        font-family: "Hiruko";
+                        font-size: 48px;
+                        line-height: 48px;
+                        color: #fff;
+                        margin-bottom: 0;
+                    }
+
+                    .role {
+                        font-family: "Hiruko";
+                        font-size: 40px;
+                        line-height: 40px;
+                        margin-bottom: 0;
+                        color: #00ffff;
+                    }
+
+                    .description {
+                        font-family: "Hiruko";
+                        font-size: 36px;
+                        line-height: 36px;
+                        color: #fff;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .team-arrow {
+            height: 250px;
+            margin-left: 500px;
+            transform: translateY(-50%);
+        }
+    }
+
+    .FAQ-section {
+        margin: 0 100px;
+        border: 10px solid #fff;
+        mix-blend-mode: normal;
+        border-radius: 50px;
+        padding: 70px 30px 30px 30px;
+
+        .title {
+            font-family: "Hiruko";
+            font-size: 64px;
+            line-height: 62px;
+            color: #fff;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .question {
+            font-family: Hiruko;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .answer-content {
+            height: 100%;
+            overflow: hidden;
+
+            .answer {
+                font-family: Hiruko;
+                font-size: 36px;
+                color: #00ffff;
+                margin-bottom: 50px;
+            }
+
+            .child-answer {
+                font-family: Hiruko;
+                font-size: 36px;
+                color: #00ffff;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1420px) {
+    .sad-bear {
+        .main-section {
+            .main-title-wrapper {
+                position: relative;
+
+                .main-title {
+                    z-index: 1;
+                    margin-left: 100px;
+                }
+
+                .bear-image-section {
+                    margin-top: 200px;
+                    background-position: bottom;
+                }
+            }
+        }
+
+        .connect-section {
+            .connect-bear {
+                width: 550px;
+                height: 550px;
+                object-fit: contain;
+                z-index: 1;
+            }
+
+            .connect-link {
+                .connect-group {
+                    .link-icon {
+                        width: 200px;
+                        padding: 0 30px;
+                    }
+
+                }
+            }
+        }
+
+        .team-section-wrapper {
+            .team-arrow {
+                transform: translateY(-30%);
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .sad-bear {
+        .main-section {
+            .main-title-wrapper {
+                .bear-image-section {
+                    width: 550px;
+                }
+            }
+        }
+
+        .connect-section {
+            .connect-bear {
+                display: none;
+            }
+
+            .connect-link {
+                .connect-group {
+                    .link-icon {
+                        width: 250px;
+                        padding: 0 30px;
+                    }
+
+                }
+            }
+        }
+
+        .team-section-wrapper {
+            .team-wrapper {
+                padding: 100px 50px 10px 20px;
+            }
+
+            .team-arrow {
+                transform: translateY(-20%);
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .sad-bear {
+        .main-section {
+            margin-top: 50px;
+            margin-bottom: 0;
+
+            .main-title-wrapper {
+                padding: 0 200px 0 100px;
+                margin-bottom: 0;
+
+                .main-title {
+                    margin-left: 0;
+                    width: auto;
+
+                    .connect-button {
+                        margin-bottom: 40px;
+                    }
+
+                    .counter-placeholder {
+                        font-size: 65px;
+                    }
+                }
+
+                .bear-image-section {
+                    margin-bottom: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 0;
+                    width: 350px;
+                    height: 900px;
+                    background-position: bottom;
+                }
+            }
+
+            .second-cloud-wrapper {
+                .road-map-wrapper {
+                    display: block;
+                    padding: 0 50px;
+
+                    .road-left-arrow {
+                        width: 60%;
+                        height: 150px;
+                    }
+
+                    .road-map-content-wrapper {
+                        width: 100%;
+                        padding: 0;
+
+                        .road-map-content {
+                            margin-bottom: 0;
+                        }
+
+                        .roadmap-arrow {
+                            height: 200px;
+                            margin-left: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .connect-section {
+            height: 500px;
+
+            .midline {
+                height: 370px;
+            }
+
+            .connect-link {
+                .connect-link-title {
+                    margin-bottom: 50px;
+                }
+
+                .connect-group {
+                    .link-icon {
+                        width: 220px;
+                        padding: 0 30px;
+                    }
+
+                }
+            }
+        }
+
+        .rarities-section {
+            height: 400px;
+            margin-left: 50px;
+
+            .midline {
+                height: 200px;
+
+                .coming-soon {
+                    font-size: 60px;
+                }
+            }
+
+            .rarities-arrow {
+                right: 150px;
+                height: 200px;
+                transform: translateY(85%);
+            }
+        }
+
+        .team-section-wrapper {
+            .team-wrapper {
+                padding: 50px;
+
+                .team-member {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 10px;
+
+                    .member-avatar {
+                        margin-right: 0;
+                        padding: 100px;
+                    }
+
+                    .member-wrapper {
+                        text-align: center;
+
+                        .name {
+                            font-family: "Hiruko";
+                            font-size: 48px;
+                            line-height: 48px;
+                            color: #fff;
+                            margin-bottom: 0;
+                        }
+
+                        .role {
+                            font-family: "Hiruko";
+                            font-size: 40px;
+                            line-height: 40px;
+                            margin-bottom: 0;
+                            color: #00ffff;
+                        }
+
+                        .description {
+                            font-family: "Hiruko";
+                            font-size: 36px;
+                            line-height: 36px;
+                            color: #fff;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .team-arrow {
+                margin-left: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sad-bear {
+        .main-section {
+            margin-top: 0;
+
+            .main-title-wrapper {
+                display: block;
+                padding: 0 50px;
+
+                .main-title {
+                    padding-right: 50px;
+
+                    .title {
+                        line-height: 90px;
+                    }
+
+                    .content {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+
+                    .connect-button {
+                        font-size: 22px;
+                        margin-bottom: 0;
+                    }
+
+                    .counter-placeholder {
+                        font-size: 36px;
+                    }
+                }
+
+                .bear-image-section {
+                    position: unset;
+                    width: auto;
+                    height: 330px;
+                    background-position: bottom;
+                    margin: 20px auto 0;
+                }
+            }
+
+            .second-cloud-wrapper {
+                .road-map-wrapper {
+                    .road-left-arrow {
+                        width: 100%;
+                    }
+
+                    .road-map-content-wrapper {
+                        .road-map-content {
+                            font-size: 18px;
+                        }
+
+                        .roadmap-arrow {
+                            margin-left: 100px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .connect-section {
+            padding: 0;
+            margin-bottom: 200px;
+            margin-right: 50px;
+
+            .short-arrow {
+                right: 250px;
+            }
+
+            .connect-link {
+
+                .connect-group {
+                    .link-icon {
+                        width: 200px;
+                        padding: 0 30px;
+                    }
+                }
+            }
+        }
+
+        .rarities-section {
+            display: block;
+            text-align: center;
+            height: 280px;
+            margin-left: 0;
+
+            .midline {
+                top: 100px;
+                left: 50px;
+                height: 150px;
+
+                .coming-soon {
+                    font-size: 48px;
+                }
+            }
+
+            .rarities-arrow {
+                display: none;
+            }
+
+            .rarities-title {
+                position: unset;
+            }
+        }
+
+        .team-section-wrapper {
+            margin-bottom: 100px;
+
+            .team-wrapper {
+                margin: 0 25px;
+                padding: 50px 10px;
+
+                .team-member {
+                    margin-bottom: 0;
+
+                    .member-avatar {
+                        padding: 100px;
+                    }
+
+                    .member-wrapper {
+                        .name {
+                            font-size: 35px;
+                        }
+
+                        .role {
+                            font-size: 35px;
+                        }
+
+                        .description {
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+
+            .team-arrow {
+                display: none;
+            }
+        }
+
+        .FAQ-section {
+            margin: 0 25px;
+            padding: 40px 10px 15px 10px;
+
+            .question {
+                font-size: 23px;
+                margin-bottom: 10px;
+            }
+
+            .answer-content {
+                .answer {
+                    font-size: 23px;
+                    margin-bottom: 30px;
+                }
+
+                .child-answer {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .sad-bear {
+        .main-section {
+
+            .main-title-wrapper {
+
+                .main-title {
+
+                    .connect-button {
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+
+                    .counter-placeholder {
+                        font-size: 33px;
+                    }
+                }
+            }
+        }
+
+
+        .connect-section {
+            height: 370px;
+            margin-right: 30px;
+
+            .midline {
+                height: 320px;
+                top: 30px;
+                right: 40px;
+            }
+
+            .short-arrow {
+                right: 150px;
+                height: 200px;
+                transform: translateY(86%);
+            }
+
+            .connect-link {
+                padding-right: 20px;
+
+                .connect-link-title {
+                    margin-bottom: 30px;
+                    font-size: 48px;
+                }
+
+                .connect-group {
+                    .link-icon {
+                        width: 138px;
+                        padding: 0 20px;
+                    }
+
+                }
+            }
+        }
+
+        .rarities-section {
+            .midline {
+                left: 40px;
+
+                .coming-soon {
+                    font-size: 40px;
+                }
+            }
+
+        }
+
+
+        .team-section-wrapper {
+            .team-wrapper {
+
+                .team-member {
+                    .member-avatar {
+                        padding: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
